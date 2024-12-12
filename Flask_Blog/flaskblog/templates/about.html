@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-5 text-center">About Us</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="mb-3">Our Story</h2>
+            <p>Welcome to <strong>Yarn Tales</strong>, a safe space to share and explore our crochet creations!
+                Whether you're a beginner or an experienced crocheter, we hope you find this blog to be an inspiration
+                filled with tips and projects,
+                to help you on your crochet journey!</p>
+            <p>Founded by Mahdia, a long-time crochet enthusiast.</p>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="{{ url_for('static', filename='images/about_crochet.jpg') }}" alt="About Crochet"
+                class="img-fluid rounded">
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2 class="mb-4">Why Crochet?</h2>
+            <p>Crochet is more than just a craft—it's a way to relax, create, and connect with others. Through this
+                blog, we aim to build a community of crochet lovers who share their creations, support one another, and
+                inspire creativity. Join us as we explore new stitches, experiment with patterns, and turn yarn into
+                beautiful pieces of art!</p>
+        </div>
+    </div>
+
+    <div class="row mt-5 text-center">
+        <div class="get-in-touch col-md-12">
+            <h3>Get in Touch</h3>
+            <p>We love to hear from our readers! Feel free to reach out with any questions, feedback, or just to say hi.
+                Happy crocheting!</p>
+            <a href="{{ url_for('main.home') }}" class="btn btn-light mt-3">Explore Our Blog</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
